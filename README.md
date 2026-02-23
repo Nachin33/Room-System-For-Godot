@@ -11,8 +11,11 @@ Else it wont work cuz the .tscn file are gonna be loaded in the RoomContainer
 
 Fistly you have the Door node, this is an Area2D but it detects once when someting enters an then it triggers the change Scene, this node has 4 variables:
 ※Next Scene: this is a path type variable that determines what archive .tscn is going to be loaded **IT IS IMPORTANT TO KNOW THAT IF YOU CHANGE THE FILE PATH IT WONT WORK**
+
 ※Next Pos: This stores a vector2 that you can use to teleport the character or something to that vector2, do what u want.
+
 ※Dir: this isn't actually needed but if you find it useful feel free to use it
+
 ※Wait time: this detemines the time the codes wait for creating the node **AFTER** deleting the current scene, this can be useful for things like fade in or something feel free to use it as you want
 
 And then there is the GlobalEventsHandler, this is a preloaded source that manages all the .tscn deleting & creating nodes for the room management and al that stuff feel free to change the code if you see some memory leak or something
